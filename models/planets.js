@@ -1,9 +1,7 @@
 'use strict';
-const {
-  Model
-} = require('sequelize');
+const { Model } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  class planets extends Model {
+  class Planet extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -13,13 +11,22 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
     }
   }
-  planets.init({
-    name: DataTypes.STRING,
-    mass: DataTypes.FLOAT,
-    diameter: DataTypes.FLOAT
-  }, {
-    sequelize,
-    modelName: 'planets',
-  });
-  return planets;
+  Planet.init(
+    {
+      name: DataTypes.STRING,
+      mass: DataTypes.FLOAT,
+      diameter: DataTypes.FLOAT,
+      distance: DataTypes.FLOAT,
+      factOne: DataTypes.STRING,
+      factTwo: DataTypes.STRING,
+      factThree: DataTypes.STRING,
+      type: DataTypes.ENUM('dwarf planet', 'gas giant', 'terrestrial planet'),
+    },
+    {
+      sequelize,
+      modelName: 'Planet',
+      tableName: 'planets',
+    }
+  );
+  return Planet;
 };
