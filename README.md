@@ -31,6 +31,8 @@ Due: 4-2-2023, 11:59 PDT
 
 [ERD](https://drive.google.com/file/d/1EPkEpEISBgIFE8sKZ55jtUETzgNYlR_6/view?usp=sharing)
 
+[Frontend Repo](https://github.com/MichaelKleyman/SolarSysQuack-Frontend)
+
 ---
 ## Features
 
