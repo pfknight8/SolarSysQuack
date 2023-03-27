@@ -30,6 +30,14 @@ Due: 4-2-2023, 11:59 PDT
 
 [ERD](https://drive.google.com/file/d/1EPkEpEISBgIFE8sKZ55jtUETzgNYlR_6/view?usp=sharing)
 
+---
+## Features
+
+- [ ] Display made entirely out of CSS w/o imported assets
+- [ ] Planets can be selected to display an info 'page'
+- [ ] Planet moons, if applicable, are also displayed with info 'page' of planet
+- [ ] Moons of planets can be selected to display own info 'page' (+MVP)
+- [ ] 
 
 ---
 ## Screenshots
@@ -64,12 +72,12 @@ LIVE CODE DEMO:
 
 Planets:
 - Each planet of the solar system must have its own profile page.
---Each page must include at a minimum (Name of the planet, size, distance from the Sun, three identifying facts, solid or gas core, and a visual representation of the planet)
+- Each page must include at a minimum (Name of the planet, size, distance from the Sun, three identifying facts, solid or gas core, and a visual representation of the planet)
 - NOTE: No images, assets, emojis, or SVGs are permitted. The visual representation of each planet must be made ENTIRELY out of CSS.
 - If the planet has a moon, you must display the following information for every moon (Name, history behind name, and size). 
 - Planet pages must include at least two different component styles.
 - If a planet has more than one moon, the moon information must be displayed in repeating elements.
---All planet and moon content MUST be stored in a database.
+- All planet and moon content MUST be stored in a database.
 
 
 Backend:
