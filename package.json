@@ -1,4 +1,24 @@
 {
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "name": "solarsysquack",
+  "description": "Pending Title",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pfknight8/SolarSysQuack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pfknight8/SolarSysQuack/issues"
+  },
+  "homepage": "https://github.com/pfknight8/SolarSysQuack#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
