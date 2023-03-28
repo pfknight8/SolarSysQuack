@@ -20,6 +20,12 @@ module.exports = {
       distance_planet: {
         type: Sequelize.FLOAT
       },
+      ap_distance: {
+        type: Sequelize.FLOAT
+      },
+      peri_distance: {
+        type: Sequelize.FLOAT
+      },
       history: {
         type: Sequelize.TEXT
       },
