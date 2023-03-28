@@ -20,6 +20,12 @@ module.exports = {
       distance: {
         type: Sequelize.FLOAT,
       },
+      ap_distance: {
+        type: Sequelize.FLOAT,
+      },
+      peri_distance: {
+        type: Sequelize.FLOAT,
+      },
       factOne: {
         type: Sequelize.TEXT,
       },

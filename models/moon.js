@@ -22,12 +22,14 @@ module.exports = (sequelize, DataTypes) => {
     mass: DataTypes.FLOAT,
     diameter: DataTypes.FLOAT,
     distance_planet: DataTypes.FLOAT,
+    ap_distance: DataTypes.FLOAT,
+    peri_distance: DataTypes.FLOAT,
     history: DataTypes.TEXT,
     planet_id: {
       type: DataTypes.INTERGER,
       onDelete: 'CASCADE',
       references: {
-        model: 'planets',
+        model: 'planets', // FYI, this can be either a string representing the table name ('planets'), OR a sequelize model (Planet).
         key: 'id'
       }
     }
