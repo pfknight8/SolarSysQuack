@@ -26,7 +26,22 @@ const addPlanet = async (req, res) => {
   }
 }
 
+const updatePlanet = async (req, res) => {
+  try {
+    let planetId = parseInt(req.params.planet_id)
+    await Planet.update(req.body, {
+      where: {
+        id: planetId
+      },
+    })
+    res.status(200).send({message: "Planet data updated."})
+  } catch (error) {
+    throw error
+  }
+}
+
 module.exports = {
   getPlanetByName,
-  addPlanet
+  addPlanet,
+  updatePlanet
 }

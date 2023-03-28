@@ -4,7 +4,9 @@ Pending Title
 ---
 ## Team
 
-List participants
+- Patrick Knight - [GitHub](https://github.com/pfknight8)
+- Michael Kleyman - [GitHub](https://github.com/MichaelKleyman)
+- Brandi Jefferson - [GitHub](https://github.com/brandi-jeff)
 
 ---
 ## Date
@@ -22,6 +24,7 @@ Due: 4-2-2023, 11:59 PDT
 * Express
 * React
 * Node
+* Sequelize
 
 ---
 ## Description
