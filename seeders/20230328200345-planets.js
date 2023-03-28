@@ -21,7 +21,7 @@ module.exports = {
       factOne: "Native planet for humans (as far as we know...)",
       factTwo: "Lot's o' fish.",
       factThree: "Mostly harmless.",
-      type: 'terrestrial',
+      type: "terrestrial",
       createdAt: new Date(),
       updateddAt: new Date(),
     }])
