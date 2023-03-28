@@ -8,7 +8,11 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      Planet.hasMany(models.Moon, {foreignKey: 'planet_id'})
+      Planet.hasMany(models.Moon, {
+        foreignKey: 'planet_id',
+        onDelete: 'CASCADE',
+        onUpdate: 'CASCADE'
+      })
     }
   }
   Planet.init(

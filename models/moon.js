@@ -10,7 +10,11 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      Moon.belongsTo(models.Planet, { foreignKey: 'planet_id'})
+      Moon.belongsTo(models.Planet, {
+        foreignKey: 'planet_id',
+        onDelete: 'CASCADE',
+        onUpdate: 'CASCADE'
+      })
     }
   }
   Moon.init({
@@ -19,7 +23,14 @@ module.exports = (sequelize, DataTypes) => {
     diameter: DataTypes.FLOAT,
     distance_planet: DataTypes.FLOAT,
     history: DataTypes.TEXT,
-    planet_id: DataTypes.INTERGER
+    planet_id: {
+      type: DataTypes.INTERGER,
+      onDelete: 'CASCADE',
+      references: {
+        model: 'planets',
+        key: 'id'
+      }
+    }
   }, {
     sequelize,
     modelName: 'Moon',
