@@ -26,7 +26,7 @@ module.exports = (sequelize, DataTypes) => {
     peri_distance: DataTypes.FLOAT,
     history: DataTypes.TEXT,
     planet_id: {
-      type: DataTypes.INTERGER,
+      type: DataTypes.INTEGER,
       onDelete: 'CASCADE',
       references: {
         model: 'planets', // FYI, this can be either a string representing the table name ('planets'), OR a sequelize model (Planet).

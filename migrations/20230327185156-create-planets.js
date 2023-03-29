@@ -35,8 +35,8 @@ module.exports = {
       factThree: {
         type: Sequelize.TEXT,
       },
-      type: {
-        type: Sequelize.ENUM('dwarf planet', 'gas giant', 'terrestrial planet'),
+      category: {
+        type: Sequelize.ENUM({values: ['dwarf planet', 'gas giant', 'terrestrial']}),
       },
       createdAt: {
         allowNull: false,
