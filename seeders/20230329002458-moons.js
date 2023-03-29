@@ -11,7 +11,7 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-    await queryInterface.bulkInsert('moons' [{
+    await queryInterface.bulkInsert('moons', [{
       name: "Earth's Moon",
       mass: 1,
       diameter: 1,

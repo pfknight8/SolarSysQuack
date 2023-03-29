@@ -11,7 +11,7 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-    await queryInterface.bulkInsert('planets' [{
+    await queryInterface.bulkInsert('planets', [{
       name: "Earth",
       mass: 5.972,
       diameter: 12756.2,
