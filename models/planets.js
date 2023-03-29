@@ -26,7 +26,9 @@ module.exports = (sequelize, DataTypes) => {
       factOne: DataTypes.TEXT,
       factTwo: DataTypes.TEXT,
       factThree: DataTypes.TEXT,
-      type: DataTypes.ENUM('dwarf planet', 'gas giant', 'terrestrial'),
+      category: {
+        type: DataTypes.ENUM({values: ['dwarf planet', 'gas giant', 'terrestrial']}),
+      }
     },
     {
       sequelize,

@@ -11,23 +11,21 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-    await queryInterface.bulkInsert('planets' [{
-      name: "Earth",
-      mass: 5.972,
-      diameter: 12756.2,
+    await queryInterface.bulkInsert('moons' [{
+      name: "Earth's Moon",
+      mass: 1,
+      diameter: 1,
       distance: 1,
-      ap_distance: 152097597,
-      peri_distance: 147098450,
-      factOne: "Native planet for humans (as far as we know...)",
-      factTwo: "Lot's o' fish.",
-      factThree: "Mostly harmless.",
-      category: "terrestrial",
+      ap_distance: 1,
+      peri_distance: 1,
+      history: "Orbits the Earth",
+      planet_id: 3,
       createdAt: new Date(),
       updateddAt: new Date(),
     }])
   },
 
   async down (queryInterface, Sequelize) {
-    return queryInterface.bulkDelete('planets')
+    return queryInterface.bulkDelete('moons')
   }
 };
