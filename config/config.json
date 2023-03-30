@@ -1,18 +1,18 @@
 {
   "development": {
-    "database": "solarsystem",
+    "database": "solarSystemQuack",
     "URL": "postgresql://localhost",
     "host": "localhost",
     "port": "5432",
     "dialect": "postgres"
   },
   "test": {
-    "database": "solarSysQuack_test",
+    "database": "solarSystemQuack_test",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {
-    "database": "solarSysQuack_production",
+    "database": "solarSystemQuack_production",
     "host": "127.0.0.1",
     "dialect": "postgres"
   }

@@ -17,12 +17,14 @@ module.exports = (sequelize, DataTypes) => {
   }
   Moon.init(
     {
-      name: DataTypes.STRING,
+      name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: true
+      },
       mass: DataTypes.STRING,
       diameter: DataTypes.STRING,
-      // distance_planet: DataTypes.FLOAT,
-      // ap_distance: DataTypes.FLOAT,
-      // peri_distance: DataTypes.FLOAT,
+      distance_planet: DataTypes.STRING,
       history: DataTypes.TEXT,
       planet_id: {
         type: DataTypes.INTEGER,
