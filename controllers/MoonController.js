@@ -1,8 +1,8 @@
 const { Moon } = require('../models')
 
-const getMoonByPlanet = async (req, res) => {
+const getMoonsByPlanet = async (req, res) => {
   try {
-    let planetName = req.query.name
+    let planetName = parseInt(req.params.name)
     const moons = await Moon.findAll({
       where: {planet_id: planetName},
       raw: true
@@ -18,5 +18,5 @@ const getMoonByPlanet = async (req, res) => {
 }
 
 module.exports = {
-  getMoonByPlanet
+  getMoonsByPlanet
 }
