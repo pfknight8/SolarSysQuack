@@ -7,7 +7,7 @@ module.exports = {
         name: "Earth's Moon",
         mass: '7.34 x 10^22 kilograms (81 billion tons)',
         diameter: '3,476 kilometers (2,159 miles)',
-        distance: '384,400 kilometers (238,900 miles)',
+        distance_planet: '384,400 kilometers (238,900 miles)',
         history:
           'it is in synchronous rotation with Earth, meaning that it takes the same amount of time to rotate once on its axis as it does to complete one orbit around Earth. This is why we always see the same side of the moon facing Earth.',
         planet_id: 3,
@@ -18,7 +18,7 @@ module.exports = {
         name: 'Phobos',
         mass: '1.08 x 10^16 kilograms (11 billion tons)',
         diameter: '22 kilometers (14 miles)',
-        distance: '9,270 kilometers (5,760 miles)',
+        distance_planet: '9,270 kilometers (5,760 miles)',
         history:
           'Phobos is one of the least reflective objects in the Solar System, with a surface that is about as dark as coal. ',
         planet_id: 4,
@@ -29,7 +29,7 @@ module.exports = {
         name: 'Deimos',
         mass: '11.8 x 10^15 kilograms (2 billion tons)',
         diameter: '12 kilometers (7.5 miles)',
-        distance: '23,460 kilometers (14,577 miles)',
+        distance_planet: '23,460 kilometers (14,577 miles)',
         history:
           "Deimos has an irregular shape and a heavily cratered surface, suggesting that it is a captured asteroid rather than a moon that formed from Mars' accretion disk.",
         planet_id: 4,
@@ -40,7 +40,7 @@ module.exports = {
         name: 'Ganymede',
         mass: '1.4819 x 10^23 kilograms',
         diameter: '5,262 kilometers (3,273 miles)',
-        distance: '1,070,000 kilometers (664,867 miles)',
+        distance_planet: '1,070,000 kilometers (664,867 miles)',
         history: "Also referred to as Jupiter III, it is the largest and most massive moon of not only Jupiter, but the Solar System as a whole. It's discovery is credited to Galileo Galilei, who first observed it on January 7th 1610. It was named soon after by Simon Marius as the mythological Trojan prince Zeus desired, and carried off to serve as cupbearer of the gods.",
         planet_id: 5,
         createdAt: new Date(),
@@ -50,7 +50,7 @@ module.exports = {
         name: 'Callisto',
         mass: '1.0759 x 10^23 kilograms',
         diameter: '4,821 kilometers (2,995 miles)',
-        distance: '1,883,000 kilometers (1,170,042 miles)',
+        distance_planet: '1,883,000 kilometers (1,170,042 miles)',
         history:
           "Also referred to as Jupiter IV, Callisto is the second-largest moon of Jupiter. It has the most heavily cratered surface of any moon in the solar system, and is thought to have a subsurface ocean of liquid water. It was discovered by Galileo Galilei in January 1610 along with the other three large moons of Jupiter (Ganymede, Io, and Europa).",
         planet_id: 5,
@@ -61,7 +61,7 @@ module.exports = {
         name: 'Io',
         mass: '8.9319 x 10^22 kilograms',
         diameter: '3,643 kilometers (2,263 miles)',
-        distance: '421,600 kilometers ( 261,970 miles)',
+        distance_planet: '421,600 kilometers ( 261,970 miles)',
         history:
           'Also referred to as Jupiter I, Io is the most volcanically active object in the solar system. Its surface is covered in hundreds of active volcanoes, many of which spew out sulfur dioxide and other gases. It was discovered by Galileo Galilei in January 1610 along with the other three large moons of Jupiter (Ganymede, Callisto, and Europa)',
         planet_id: 5,
@@ -72,7 +72,7 @@ module.exports = {
         name: 'Europa',
         mass: '4.7998 x 10^22 kilograms',
         diameter: '3,122 kilometers (1,940 miles)',
-        distance: '670,900 kilometers ( 416,878 miles)',
+        distance_planet: '670,900 kilometers ( 416,878 miles)',
         history:
           'Also known as Jupiter II, Europa is one of the most intriguing moons in the solar system. Its surface is covered in a layer of ice that is thought to conceal a subsurface ocean of liquid water, which could potentially support life. It was discovered by Galileo Galilei in January 1610 along with the other three large moons of Jupiter (Ganymede, Io, and Callisto)',
         planet_id: 5,
@@ -83,7 +83,7 @@ module.exports = {
         name: 'Amalthea',
         mass: '2.08 x 10^18 kilograms',
         diameter: '250 kilometers (155 miles)',
-        distance: '181,300 kilometers (112,655 miles)',
+        distance_planet: '181,300 kilometers (112,655 miles)',
         history:
           'Amalthea is one of the smaller moons of Jupiter. It is irregularly shaped and has a reddish color, and is thought to be made up primarily of rock.',
         planet_id: 5,
@@ -94,7 +94,7 @@ module.exports = {
         name: 'Himalia',
         mass: '4.01 x 10^18 kilograms',
         diameter: '170 kilometers (106 miles)',
-        distance: '11,480,000 kilometers (7,133,341 miles)',
+        distance_planet: '11,480,000 kilometers (7,133,341 miles)',
         history:
           "Himalia is one of the largest of Jupiter's irregularly shaped moons. It is thought to be made up primarily of rock and may be a captured asteroid.",
         planet_id: 5,
@@ -105,7 +105,7 @@ module.exports = {
         name: 'Thebe',
         mass: '4.3 x 10^17 kilograms',
         diameter: '100 kilometers (62 miles)',
-        distance: '221,900 kilometers (137,882 miles)',
+        distance_planet: '221,900 kilometers (137,882 miles)',
         history:
           'Thebe is a small, irregularly shaped moon of Jupiter. Its surface is heavily cratered, and it is thought to be made up primarily of rock.',
         planet_id: 5,
@@ -116,7 +116,7 @@ module.exports = {
         name: 'Elara',
         mass: '8.7 x 10^17 kilograms',
         diameter: '86 kilometers (53 miles)',
-        distance: '11,737,000 kilometers (7,293,034 miles)',
+        distance_planet: '11,737,000 kilometers (7,293,034 miles)',
         history:
           "Elara is another of Jupiter's irregularly shaped moons. It is thought to be made up primarily of rock and may be a captured asteroid.",
         planet_id: 5,
@@ -127,7 +127,7 @@ module.exports = {
         name: 'Pasiphae',
         mass: '2.3 x 10^18 kilograms',
         diameter: '60 kilometers (37 miles)',
-        distance: '23,500,000 kilometers (14,602,223 miles)',
+        distance_planet: '23,500,000 kilometers (14,602,223 miles)',
         history:
           'Pasiphae is a small, irregularly shaped moon of Jupiter. It is thought to be made up primarily of rock and may be a captured asteroid.',
         planet_id: 5,
@@ -138,7 +138,7 @@ module.exports = {
         name: 'Sinope',
         mass: '2.9 x 10^18 kilograms',
         diameter: '38 kilometers (24 miles)',
-        distance: '23,700,700 kilometers (14,726,932 miles)',
+        distance_planet: '23,700,700 kilometers (14,726,932 miles)',
         history:
           "Sinope is one of Jupiter's smallest known moons. It is thought to be made up primarily of rock and may be a captured asteroid.",
         planet_id: 5,
@@ -149,7 +149,7 @@ module.exports = {
         name: 'Titan',
         mass: '1.35 x 10^23 kilograms',
         diameter: '5,150 kilometers',
-        distance: '1,221,850 kilometers (759,222 miles)',
+        distance_planet: '1,221,850 kilometers (759,222 miles)',
         history:
           'Titan is the only moon in the solar system with a dense atmosphere, and it is the second-largest moon in the solar system.',
         planet_id: 6,
@@ -160,7 +160,7 @@ module.exports = {
         name: 'Rhea',
         mass: '2.31 x 10^21 kilograms',
         diameter: '1528 kilometers',
-        distance: '527,040 kilometers (327,487 miles)',
+        distance_planet: '527,040 kilometers (327,487 miles)',
         history:
           'Rhea has a heavily cratered surface and a few large fractures on its icy surface.',
         planet_id: 6,
@@ -171,7 +171,7 @@ module.exports = {
         name: 'Iapetus',
         mass: '1.81 x 10^21 kilograms',
         diameter: '1470 kilometers',
-        distance: '3,561,300 kilometers (2,212,889 miles)',
+        distance_planet: '3,561,300 kilometers (2,212,889 miles)',
         history:
           'Iapetus has a distinctive two-tone appearance, with one half of the moon being much darker than the other.',
         planet_id: 6,
@@ -182,7 +182,7 @@ module.exports = {
         name: 'Dione',
         mass: '6.17 x 10^20 kilograms',
         diameter: '1062 kilometers',
-        distance: '377,400 kilometers (234,505 miles)',
+        distance_planet: '377,400 kilometers (234,505 miles)',
         history:
           'Tethys has a large impact crater called Odysseus that is over 400 km in diameter.',
         planet_id: 6,
@@ -193,7 +193,7 @@ module.exports = {
         name: 'Enceladus',
         mass: '1.08 x 10^20 kilograms',
         diameter: '504 kilometers',
-        distance: '238,020 kilometers (147,899 miles)',
+        distance_planet: '238,020 kilometers (147,899 miles)',
         history:
           'Enceladus is known for its active geysers, which spew water vapor and icy particles into space.',
         planet_id: 6,
@@ -204,7 +204,7 @@ module.exports = {
         name: 'Mimas',
         mass: '3.75 x 10^19 kilograms',
         diameter: '396 kilometers',
-        distance: '185,520 kilometers (115,277 miles)',
+        distance_planet: '185,520 kilometers (115,277 miles)',
         history:
           'Mimas has a large impact crater called Herschel that is over 130 km in diameter, and it gives the moon a resemblance to the "Death Star" from Star Wars.',
         planet_id: 6,
@@ -215,7 +215,7 @@ module.exports = {
         name: 'Hyperion',
         mass: '5.62 x 10^18 kilograms',
         diameter: '270 kilometers',
-        distance: '1,481,000 kilometers (920,251 miles)',
+        distance_planet: '1,481,000 kilometers (920,251 miles)',
         history:
           'Hyperion has a highly irregular shape and a sponge-like appearance due to its porous, icy composition.',
         planet_id: 6,
@@ -226,7 +226,7 @@ module.exports = {
         name: 'Phoebe',
         mass: '8.29 x 10^18 kilograms',
         diameter: '213 kilometers',
-        distance: '12,952,000 kilometers (8,048,000 miles)',
+        distance_planet: '12,952,000 kilometers (8,048,000 miles)',
         history:
           'Phoebe is one of the outermost moons of Saturn and is thought to be a captured object from the Kuiper Belt, a region of icy bodies beyond Neptune.',
         planet_id: 6,
@@ -237,7 +237,7 @@ module.exports = {
         name: 'Janus',
         mass: '1.90 x 10^18 kilograms',
         diameter: '179 kilometers',
-        distance: '151,472 kilometers (94,120 miles)',
+        distance_planet: '151,472 kilometers (94,120 miles)',
         history:
           'Janus and its partner moon Epimetheus share the same orbit around Saturn and occasionally swap places due to their gravitational interaction.',
         planet_id: 6,
@@ -248,7 +248,7 @@ module.exports = {
         name: 'Epimetheus',
         mass: '5.27 x 10^17 kilograms',
         diameter: '153 kilometers',
-        distance: '151,422 kilometers (94,089 miles)',
+        distance_planet: '151,422 kilometers (94,089 miles)',
         history:
           'Epimetheus and Janus are thought to be remnants of a larger moon that broke apart.',
         planet_id: 6,
@@ -259,7 +259,7 @@ module.exports = {
         name: 'Titania',
         mass: '3.5 x 10^21 kilograms',
         diameter: '1,578 kilometers',
-        distance: '435,840 kilometers (270,818 miles)',
+        distance_planet: '435,840 kilometers (270,818 miles)',
         history:
           'Titania has a heavily cratered surface, as well as valleys and canyons that suggest some form of tectonic activity.',
         planet_id: 7,
@@ -270,7 +270,7 @@ module.exports = {
         name: 'Oberon',
         mass: '3.0 x 10^21 kilograms',
         diameter: '1523 kilometers',
-        distance: '582,600 kilometers (362,011 miles)',
+        distance_planet: '582,600 kilometers (362,011 miles)',
         history:
           'Oberon has a heavily cratered surface, as well as a large canyon system known as Mommur Chasma.',
         planet_id: 7,
@@ -281,7 +281,7 @@ module.exports = {
         name: 'Umbriel',
         mass: '1.2 x 10^21 kilograms',
         diameter: '1169 kilometers',
-        distance: '265,970 kilometers (165,266 miles)',
+        distance_planet: '265,970 kilometers (165,266 miles)',
         history:
           'Umbriel has a heavily cratered surface, as well as a large, dark basin known as Wunda Crater.',
         planet_id: 7,
@@ -292,7 +292,7 @@ module.exports = {
         name: 'Ariel',
         mass: '1.3 x 10^21 kilograms',
         diameter: '1158 kilometers',
-        distance: '191,240 kilometers (118,831 miles)',
+        distance_planet: '191,240 kilometers (118,831 miles)',
         history:
           'Ariel has a varied surface, with extensive fault systems, valleys, and canyons, as well as a large, smooth region known as the Ariel Planitia.',
         planet_id: 7,
@@ -303,7 +303,7 @@ module.exports = {
         name: 'Miranda',
         mass: '6.4 x 10^19 kilograms',
         diameter: '471 kilometers',
-        distance: '129,780 kilometers (80,642 miles)',
+        distance_planet: '129,780 kilometers (80,642 miles)',
         history:
           'Miranda has a highly varied surface, with cliffs, canyons, and bizarre-looking features known as coronae, which are thought to be the result of tectonic activity.',
         planet_id: 7,
@@ -314,7 +314,7 @@ module.exports = {
         name: 'Puck',
         mass: '2.9 x 10^1 kilograms',
         diameter: '162 kilometers',
-        distance: '86,010 kilometers (53,444 miles)',
+        distance_planet: '86,010 kilometers (53,444 miles)',
         history:
           "Puck has a heavily cratered surface and is one of the smallest of Uranus's known moons.",
         planet_id: 7,
@@ -325,7 +325,7 @@ module.exports = {
         name: 'Portia',
         mass: '1.3 x 10^17 kilograms',
         diameter: '135 kilometers',
-        distance: '66,085 kilometers (41,063 miles)',
+        distance_planet: '66,085 kilometers (41,063 miles)',
         history:
           'Portia has a relatively smooth surface and is named after a character from Shakespeare\'s play "The Merchant of Venice."',
         planet_id: 7,
@@ -336,7 +336,7 @@ module.exports = {
         name: 'Juliet',
         mass: '7.6 x 10^16 kilograms',
         diameter: '94 kilometers',
-        distance: '64,360 kilometers (64,360 miles)',
+        distance_planet: '64,360 kilometers (64,360 miles)',
         history:
           "Juliet is one of the smaller of Uranus's known moons and has a heavily cratered surface.",
         planet_id: 7,
@@ -347,7 +347,7 @@ module.exports = {
         name: 'Cressida',
         mass: '3.3 x 10^16 kilograms',
         diameter: '80 kilometers',
-        distance: '61,770 kilometers (38,382 miles)',
+        distance_planet: '61,770 kilometers (38,382 miles)',
         history:
           'Cressida has a heavily cratered surface and is named after a character from Shakespeare\'s play "Troilus and Cressida."',
         planet_id: 7,
@@ -358,7 +358,7 @@ module.exports = {
         name: 'Belinda',
         mass: '1.2 x 10^16 kilograms',
         diameter: '68 kilometers',
-        distance: '75,260 kilometers (46,764 miles)',
+        distance_planet: '75,260 kilometers (46,764 miles)',
         history:
           'Belinda has a heavily cratered surface and is named after a character from Alexander Pope\'s poem "The Rape of the Lock."',
         planet_id: 7,
@@ -369,7 +369,7 @@ module.exports = {
         name: 'Triton',
         mass: '2.14 x 10^22 kilograms',
         diameter: '2707 kilometers',
-        distance: '354,800 kilometers (220,463 miles)',
+        distance_planet: '354,800 kilometers (220,463 miles)',
         history:
           "Triton is the only large moon in the solar system that orbits in the opposite direction of its planet's rotation.",
         planet_id: 8,
@@ -380,7 +380,7 @@ module.exports = {
         name: 'Nereid',
         mass: '3.1 x 10^19 kilograms',
         diameter: '340 kilometers',
-        distance: '5,513,400 kilometers (3,425,868 miles)',
+        distance_planet: '5,513,400 kilometers (3,425,868 miles)',
         history:
           'Nereid has one of the most eccentric orbits of any moon in the solar system.',
         planet_id: 8,
@@ -391,7 +391,7 @@ module.exports = {
         name: 'Proteus',
         mass: '5.2 x 10^19 kilograms',
         diameter: '420 kilometers',
-        distance: '117,600 kilometers (73,073 miles)',
+        distance_planet: '117,600 kilometers (73,073 miles)',
         history:
           'Proteus is the largest irregularly shaped moon in the solar system.',
         planet_id: 8,
@@ -402,7 +402,7 @@ module.exports = {
         name: 'Larissa',
         mass: '4.2 x 10^17 kilograms',
         diameter: '194 kilometers',
-        distance: '73,600 kilometers (45,733 miles)',
+        distance_planet: '73,600 kilometers (45,733 miles)',
         history:
           'Larissa is named after a lover of Poseidon, the Greek god of the sea.',
         planet_id: 8,
@@ -413,7 +413,7 @@ module.exports = {
         name: 'Despina',
         mass: '2.1 x 10^17 kilograms',
         diameter: '150 kilometers',
-        distance: '62,000 kilometers (38,525 miles)',
+        distance_planet: '62,000 kilometers (38,525 miles)',
         history: 'Despina was discovered by the Voyager 2 spacecraft in 1989.',
         planet_id: 8,
         createdAt: new Date(),
@@ -423,7 +423,7 @@ module.exports = {
         name: 'Galatea',
         mass: ' 2.1 x 10^17 kilograms',
         diameter: '158 kilometers',
-        distance: '52,500 kilometers (32,622 miles)',
+        distance_planet: '52,500 kilometers (32,622 miles)',
         history:
           'Galatea is named after one of the sea nymphs in Greek mythology.',
         planet_id: 8,
@@ -434,7 +434,7 @@ module.exports = {
         name: 'Thalassa',
         mass: '7.5 x 10^16 kilograms',
         diameter: '82 kilometers',
-        distance: '50,000 kilometers (31,069 miles)',
+        distance_planet: '50,000 kilometers (31,069 miles)',
         history:
           'Thalassa is named after the Greek goddess of the sea, and is also one of the seven inner moons of Neptune.',
         planet_id: 8,
@@ -445,7 +445,7 @@ module.exports = {
         name: 'Naiad',
         mass: '1.9 x 10^16 kilograms',
         diameter: '58 kilometers',
-        distance: '48,200 kilometers (29,950 miles)',
+        distance_planet: '48,200 kilometers (29,950 miles)',
         history:
           'Naiad is one of the smallest moons in the solar system, and was discovered by Voyager 2 in 1989.',
         planet_id: 8,
@@ -456,7 +456,7 @@ module.exports = {
         name: 'Sao',
         mass: '5.7 x 10^15 kilograms',
         diameter: '44 kilometers',
-        distance: '22,337,190 kilometers (13,879,686 miles)',
+        distance_planet: '22,337,190 kilometers (13,879,686 miles)',
         history:
           'Sao is named after a mythological Amazon warrior, and was discovered by Voyager 2 in 1989.',
         planet_id: 8,
@@ -467,7 +467,7 @@ module.exports = {
         name: 'Laomedeia',
         mass: '4.1 x 10^15 kilograms',
         diameter: '42 kilometers',
-        distance: '22,613,200 kilometers (14,051,191 miles)',
+        distance_planet: '22,613,200 kilometers (14,051,191 miles)',
         history:
           'Laomedeia is named after one of the 50 daughters of King Thespius in Greek mythology.',
         planet_id: 8,
@@ -478,7 +478,7 @@ module.exports = {
         name: 'Charon',
         mass: '1.52 x 10^21 kilograms',
         diameter: '1212 kilometers',
-        distance: '19,571 kilometers (12,161 miles)',
+        distance_planet: '19,571 kilometers (12,161 miles)',
         history:
           'Charon is the largest moon of Pluto and is so big that some scientists consider the Pluto-Charon system to be a "double dwarf planet". Charon is covered in water ice, and has a large canyon called Serenity Chasma that is over 1,000 kilometers long.',
         planet_id: 9,
@@ -489,7 +489,7 @@ module.exports = {
         name: 'Styx',
         mass: 'unknown',
         diameter: '7-21 kilometers',
-        distance: '42,656 kilometers (26,505 miles)',
+        distance_planet: '42,656 kilometers (26,505 miles)',
         history:
           'Styx is the second-largest moon of Pluto, and is named after the river Styx in Greek mythology. It was discovered in 2012 by astronomers using the Hubble Space Telescope.',
         planet_id: 9,
@@ -500,7 +500,7 @@ module.exports = {
         name: 'Nix',
         mass: 'unknown',
         diameter: '20-50 kilometers',
-        distance: '48,675 kilometers (30,245 miles)',
+        distance_planet: '48,675 kilometers (30,245 miles)',
         history:
           'Nix is the third-largest moon of Pluto, and was also discovered in 2005 by the same team that discovered Hydra. It has a reddish color and an irregular shape.',
         planet_id: 9,
@@ -511,7 +511,7 @@ module.exports = {
         name: 'Kerberos',
         mass: 'unknown',
         diameter: '12-34 kilometers',
-        distance: '57,783 kilometers (35,905 miles)',
+        distance_planet: '57,783 kilometers (35,905 miles)',
         history:
           "Kerberos is the smallest of Pluto's five moons, and was discovered in 2011 using the Hubble Space Telescope. It has a highly reflective surface, which suggests it is covered in water ice.",
         planet_id: 9,
@@ -522,7 +522,7 @@ module.exports = {
         name: 'Hydra',
         mass: 'known',
         diameter: '30-40 kilometers',
-        distance: '64,780 kilometers (40,252 miles)',
+        distance_planet: '64,780 kilometers (40,252 miles)',
         history:
           "Hydra is the second-largest of Pluto's moons and was discovered in 2005 by a team of astronomers using the Hubble Space Telescope. It has a irregular shape and is thought to be covered in water ice.",
         planet_id: 9,
