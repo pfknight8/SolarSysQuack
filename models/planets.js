@@ -18,16 +18,16 @@ module.exports = (sequelize, DataTypes) => {
   Planet.init(
     {
       name: DataTypes.STRING,
-      mass: DataTypes.FLOAT,
-      diameter: DataTypes.FLOAT,
-      distance: DataTypes.FLOAT,
+      mass: DataTypes.STRING,
+      diameter: DataTypes.STRING,
+      distance: DataTypes.STRING,
       ap_distance: DataTypes.FLOAT,
       peri_distance: DataTypes.FLOAT,
       factOne: DataTypes.TEXT,
       factTwo: DataTypes.TEXT,
       factThree: DataTypes.TEXT,
       category: {
-        type: DataTypes.ENUM({values: ['dwarf planet', 'gas giant', 'terrestrial']}),
+        type: DataTypes.ENUM({values: ['dwarf planet', 'gas giant', 'terrestrial', 'ice planet']}),
       }
     },
     {

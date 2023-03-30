@@ -12,20 +12,20 @@ module.exports = {
         type: Sequelize.STRING,
       },
       mass: {
-        type: Sequelize.FLOAT,
+        type: Sequelize.STRING,
       },
       diameter: {
-        type: Sequelize.FLOAT,
+        type: Sequelize.STRING,
       },
       distance: {
-        type: Sequelize.FLOAT,
+        type: Sequelize.STRING,
       },
-      ap_distance: {
-        type: Sequelize.FLOAT,
-      },
-      peri_distance: {
-        type: Sequelize.FLOAT,
-      },
+      // ap_distance: {
+      //   type: Sequelize.FLOAT,
+      // },
+      // peri_distance: {
+      //   type: Sequelize.FLOAT,
+      // },
       factOne: {
         type: Sequelize.TEXT,
       },
@@ -36,7 +36,7 @@ module.exports = {
         type: Sequelize.TEXT,
       },
       category: {
-        type: Sequelize.ENUM({values: ['dwarf planet', 'gas giant', 'terrestrial']}),
+        type: Sequelize.ENUM({values: ['dwarf planet', 'gas giant', 'terrestrial', 'ice planet']}),
       },
       createdAt: {
         allowNull: false,
