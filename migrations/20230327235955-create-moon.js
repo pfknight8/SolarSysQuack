@@ -9,22 +9,18 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       name: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false,
+        unique: true
       },
       mass: {
-        type: Sequelize.FLOAT
+        type: Sequelize.STRING
       },
       diameter: {
-        type: Sequelize.FLOAT
+        type: Sequelize.STRING
       },
       distance_planet: {
-        type: Sequelize.FLOAT
-      },
-      ap_distance: {
-        type: Sequelize.FLOAT
-      },
-      peri_distance: {
-        type: Sequelize.FLOAT
+        type: Sequelize.STRING
       },
       history: {
         type: Sequelize.TEXT

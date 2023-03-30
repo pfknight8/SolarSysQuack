@@ -17,12 +17,14 @@ module.exports = (sequelize, DataTypes) => {
   }
   Planet.init(
     {
-      name: DataTypes.STRING,
+      name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: true
+      },
       mass: DataTypes.STRING,
       diameter: DataTypes.STRING,
       distance: DataTypes.STRING,
-      ap_distance: DataTypes.FLOAT,
-      peri_distance: DataTypes.FLOAT,
       factOne: DataTypes.TEXT,
       factTwo: DataTypes.TEXT,
       factThree: DataTypes.TEXT,

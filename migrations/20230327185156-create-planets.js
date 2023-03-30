@@ -10,6 +10,8 @@ module.exports = {
       },
       name: {
         type: Sequelize.STRING,
+        allowNull: false,
+        unique: true
       },
       mass: {
         type: Sequelize.STRING,
@@ -20,12 +22,6 @@ module.exports = {
       distance: {
         type: Sequelize.STRING,
       },
-      // ap_distance: {
-      //   type: Sequelize.FLOAT,
-      // },
-      // peri_distance: {
-      //   type: Sequelize.FLOAT,
-      // },
       factOne: {
         type: Sequelize.TEXT,
       },
