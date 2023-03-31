@@ -29,6 +29,10 @@ Due: 4-2-2023, 11:59 PDT
 ---
 ## Description
 
+A short hackathon project provided through the #DearJuniorDev Discord Server. The theme for this project is to build an interactive website that provides information on the planets of the solar system (refer to the full prompt below). For this project, our team of three chose to use the PERN stack, as shown in the technologies section, and this repo hosts the backend for our project. To view our project, one may visit the deployed version provided below.
+
+To get started with coding this project, one will need to install the proper technologies, as refered to in the technology section. One can then `fork` and `clone` the repository, then run `npm install` to install the dependencies. To set up the database, run `sequelize db:create` to build the database, then `sequelize db:migrate` to incoporate the models into the database, then `sequelize db:seed:all` to seed the database with our seed information. Use `npm run dev` to spin up a local server at localhost:3001.
+
 ---
 ## Project Links
 
