@@ -8,7 +8,7 @@ const getPlanetByName = async (req, res) => {
       raw: true
     })
     if (planet){
-      return res.status(200).json({planet})
+      return res.status(200).send(planet)
     } else {
       return res.status(404).send({message: 'Planet not found in database!'})
     }
@@ -19,12 +19,12 @@ const getPlanetByName = async (req, res) => {
 
 const getPlanetWithMoons = async (req, res) => {
   try {
-    let planetId = parseInt(req.params.planet_id)
+    let planetName = req.params.name
     const planetWithMoons = await Planet.findOne({
-      where: {id: planetId},
+      where: {name: planetName},
       include: {model: Moon, as: "moons"}
     })
-    res.status(200).json(planetWithMoons)
+    return res.status(200).send(planetWithMoons)
   } catch (error) {
     throw error
   }
@@ -33,7 +33,7 @@ const getPlanetWithMoons = async (req, res) => {
 const addPlanet = async (req, res) => {
   try {
     let createPlanet = await Planet.create(req.body)
-    return res.status(200).json({createPlanet})
+    return res.status(200).send({createPlanet})
   } catch (error) {
     throw error
   }
