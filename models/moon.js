@@ -9,6 +9,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       Moon.belongsTo(models.Planet, {
+        as: "orbits",
         foreignKey: 'planet_id',
         onDelete: 'CASCADE',
         onUpdate: 'CASCADE',

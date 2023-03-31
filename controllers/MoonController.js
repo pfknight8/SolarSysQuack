@@ -1,4 +1,4 @@
-const { Moon } = require('../models')
+const { Moon, Planet } = require('../models')
 
 const getMoonsByPlanet = async (req, res) => {
   try {
@@ -17,6 +17,30 @@ const getMoonsByPlanet = async (req, res) => {
   }
 }
 
+const getMoonWithPlanet = async (req, res) => {
+  try {
+    let moonId = parseInt(req.params.moon_id)
+    const moonWithPlanet = await Moon.findOne({
+      where: {id: moonId},
+      include: [{model: Planet, as: "orbits"}]
+    })
+    res.status(200).json(moonWithPlanet)
+  } catch (error) {
+    throw error
+  }
+}
+
+const getAllMoons = async (req, res) => {
+  try {
+    const moons = await Moon.findAll()
+    res.status(200).json(moons)
+  } catch (error) {
+    throw error
+  }
+}
+
 module.exports = {
-  getMoonsByPlanet
+  getMoonsByPlanet,
+  getMoonWithPlanet,
+  getAllMoons
 }

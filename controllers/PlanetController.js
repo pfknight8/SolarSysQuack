@@ -1,4 +1,4 @@
-const { Planet } = require('../models')
+const { Planet, Moon } = require('../models')
 
 const getPlanetByName = async (req, res) => {
   try {
@@ -14,6 +14,19 @@ const getPlanetByName = async (req, res) => {
     }
   } catch (error) {
     return res.status(500).send(error.message)
+  }
+}
+
+const getPlanetWithMoons = async (req, res) => {
+  try {
+    let planetId = parseInt(req.params.planet_id)
+    const planetWithMoons = await Planet.findOne({
+      where: {id: planetId},
+      include: {model: Moon, as: "moons"}
+    })
+    res.status(200).json(planetWithMoons)
+  } catch (error) {
+    throw error
   }
 }
 
@@ -54,6 +67,7 @@ const deletePlanet = async (req, res) => {
 
 module.exports = {
   getPlanetByName,
+  getPlanetWithMoons,
   addPlanet,
   updatePlanet,
   deletePlanet

@@ -9,6 +9,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       Planet.hasMany(models.Moon, {
+        as: "moons",
         foreignKey: 'planet_id',
         onDelete: 'CASCADE',
         onUpdate: 'CASCADE'
