@@ -41,7 +41,8 @@ module.exports = {
         mass: '1.4819 x 10^23 kilograms',
         diameter: '5,262 kilometers (3,273 miles)',
         distance_planet: '1,070,000 kilometers (664,867 miles)',
-        history: "Also referred to as Jupiter III, it is the largest and most massive moon of not only Jupiter, but the Solar System as a whole. It's discovery is credited to Galileo Galilei, who first observed it on January 7th 1610. It was named soon after by Simon Marius as the mythological Trojan prince Zeus desired, and carried off to serve as cupbearer of the gods.",
+        history:
+          "Also referred to as Jupiter III, it is the largest and most massive moon of not only Jupiter, but the Solar System as a whole. It's discovery is credited to Galileo Galilei, who first observed it on January 7th 1610. It was named soon after by Simon Marius as the mythological Trojan prince Zeus desired, and carried off to serve as cupbearer of the gods.",
         planet_id: 5,
         createdAt: new Date(),
         updatedAt: new Date(),
@@ -52,7 +53,7 @@ module.exports = {
         diameter: '4,821 kilometers (2,995 miles)',
         distance_planet: '1,883,000 kilometers (1,170,042 miles)',
         history:
-          "Also referred to as Jupiter IV, Callisto is the second-largest moon of Jupiter. It has the most heavily cratered surface of any moon in the solar system, and is thought to have a subsurface ocean of liquid water. It was discovered by Galileo Galilei in January 1610 along with the other three large moons of Jupiter (Ganymede, Io, and Europa).",
+          'Also referred to as Jupiter IV, Callisto is the second-largest moon of Jupiter. It has the most heavily cratered surface of any moon in the solar system, and is thought to have a subsurface ocean of liquid water. It was discovered by Galileo Galilei in January 1610 along with the other three large moons of Jupiter (Ganymede, Io, and Europa).',
         planet_id: 5,
         createdAt: new Date(),
         updatedAt: new Date(),
