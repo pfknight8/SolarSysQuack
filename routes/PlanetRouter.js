@@ -2,6 +2,7 @@ const Router = require('express').Router()
 const controller = require('../controllers/PlanetController')
 
 Router.post('/', controller.addPlanet)
+Router.get('/', controller.getAllPlanets)
 Router.get('/:name', controller.getPlanetByName)
 Router.get('/moons/:name', controller.getPlanetWithMoons)
 Router.put('/:planet_id', controller.updatePlanet)
