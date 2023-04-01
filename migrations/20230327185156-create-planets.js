@@ -11,7 +11,10 @@ module.exports = {
       name: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: true
+        unique: true,
+      },
+      overview: {
+        type: Sequelize.TEXT,
       },
       mass: {
         type: Sequelize.STRING,
@@ -32,7 +35,9 @@ module.exports = {
         type: Sequelize.TEXT,
       },
       category: {
-        type: Sequelize.ENUM({values: ['dwarf planet', 'gas giant', 'terrestrial', 'ice planet']}),
+        type: Sequelize.ENUM({
+          values: ['dwarf planet', 'gas giant', 'terrestrial', 'ice planet'],
+        }),
       },
       createdAt: {
         allowNull: false,

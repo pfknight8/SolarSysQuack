@@ -9,11 +9,11 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       Planet.hasMany(models.Moon, {
-        as: "moons",
+        as: 'moons',
         foreignKey: 'planet_id',
         onDelete: 'CASCADE',
-        onUpdate: 'CASCADE'
-      })
+        onUpdate: 'CASCADE',
+      });
     }
   }
   Planet.init(
@@ -21,8 +21,9 @@ module.exports = (sequelize, DataTypes) => {
       name: {
         type: DataTypes.STRING,
         allowNull: false,
-        unique: true
+        unique: true,
       },
+      overview: DataTypes.TEXT,
       mass: DataTypes.STRING,
       diameter: DataTypes.STRING,
       distance: DataTypes.STRING,
@@ -30,8 +31,10 @@ module.exports = (sequelize, DataTypes) => {
       factTwo: DataTypes.TEXT,
       factThree: DataTypes.TEXT,
       category: {
-        type: DataTypes.ENUM({values: ['dwarf planet', 'gas giant', 'terrestrial', 'ice planet']}),
-      }
+        type: DataTypes.ENUM({
+          values: ['dwarf planet', 'gas giant', 'terrestrial', 'ice planet'],
+        }),
+      },
     },
     {
       sequelize,
