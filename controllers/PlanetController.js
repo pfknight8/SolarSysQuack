@@ -1,5 +1,14 @@
 const { Planet, Moon } = require('../models')
 
+const getAllPlanets = async (req, res) => {
+  try {
+    const planets = await Planet.findAll()
+    res.status(200).json(planets)
+  } catch (error) {
+    throw error
+  }
+}
+
 const getPlanetByName = async (req, res) => {
   try {
     let planetName = req.params.name
@@ -66,6 +75,7 @@ const deletePlanet = async (req, res) => {
 }
 
 module.exports = {
+  getAllPlanets,
   getPlanetByName,
   getPlanetWithMoons,
   addPlanet,

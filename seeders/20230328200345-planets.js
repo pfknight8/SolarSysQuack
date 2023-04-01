@@ -156,20 +156,21 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date(),
       },
-      // {
-      //   name: 'Ceres',
-      //   mass: '1.31 x 10^22 kilograms',
-      //   diameter: '939 kilometers (584 miles)',
-      //   distance: '413 million kilometers (257 million miles)',
-      //   factOne: 'Ceres is the largest object in the asteroid belt.',
-      //   factTwo:
-      //     'Ceres was the first object to be discovered in the asteroid belt, when Giuseppe Piazzi spotted it in 1801.',
-      //   factThree:
-      //     'Ceres is the only dwarf planet located in the inner solar system. Ceres meets two of the three rules that would allow it to be planet in its own right (which would make it the fifth from the Sun): it is massive enough to have achieved hydrostatic equilibrium (nearly round shape), and it is not a star or satellite of another object. It has failed to clear its own orbit, residing in the region known as the asteroid belt, thus keeping it a dwarf planet.',
-      //   category: 'dwarf planet',
-      //   createdAt: new Date(),
-      //   updatedAt: new Date(),
-      // },
+      {
+        name: 'Ceres',
+        overview: "Ceres is a dwarf planet in the asteroid belt between the orbits of Mars and Jupiter. Ceres was the first object to be discovered in the asteroid belt, when Giuseppe Piazzi spotted it in 1801.",
+        mass: '1.31 x 10^22 kilograms',
+        diameter: '939 kilometers (584 miles)',
+        distance: '413 million kilometers (257 million miles)',
+        factOne: 'Ceres is the largest object in the asteroid belt.',
+        factTwo:
+          'Ceres accounts for about 40% of the mass of the asteroid belt.',
+        factThree:
+          'Ceres is the only dwarf planet located in the inner solar system. Ceres meets two of the three rules that would allow it to be planet in its own right (which would make it the fifth from the Sun): it is massive enough to have achieved hydrostatic equilibrium (nearly round shape), and it is not a star or satellite of another object. It has failed to clear its own orbit, residing in the region known as the asteroid belt, thus keeping it a dwarf planet.',
+        category: 'dwarf planet',
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
     ]);
   },
 
