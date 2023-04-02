@@ -1,5 +1,5 @@
 # SolarSysQuack
-Pending Title
+Quacking Through the Cosmos
 
 ---
 ## Team
