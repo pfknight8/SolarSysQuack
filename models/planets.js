@@ -10,7 +10,8 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       Planet.hasMany(models.Moon, {
         as: 'moons',
-        foreignKey: 'planet_id',
+        foreignKey: 'planet_name', // This is the name of the fKey for the model that will be associated (resides in our child (Moon) model)
+        sourceKey: 'name', // This sets the 'name' field as the source of the association from Planet model
         onDelete: 'CASCADE',
         onUpdate: 'CASCADE',
       });

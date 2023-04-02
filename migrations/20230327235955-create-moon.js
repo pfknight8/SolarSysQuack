@@ -25,12 +25,12 @@ module.exports = {
       history: {
         type: Sequelize.TEXT
       },
-      planet_id: {
-        type: Sequelize.INTEGER,
+      planet_name: {
+        type: Sequelize.STRING,
         onDelete: 'CASCADE',
         references: {
           model: 'planets',
-          key: 'id'
+          key: 'name'
         }
       },
       createdAt: {
