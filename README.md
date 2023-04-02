@@ -113,3 +113,7 @@ Credit: DevJessParker 03/24/2023
 Any relevant resources or code snippets can be referenced (linked) to here.
 
 - [Windows To The Universe](https://www.windows2universe.org/our_solar_system/moons_table.html)
+- [Sequelize](https://sequelize.org/docs/v6/getting-started/) Documents
+- [PostgreSQL](https://www.postgresql.org/docs/) Documents
+- [Express.js](https://expressjs.com/en/starter/installing.html) Documents
+- [Node.js](https://nodejs.org/en/docs) Documents

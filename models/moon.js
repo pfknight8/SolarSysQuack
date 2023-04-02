@@ -10,7 +10,8 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       Moon.belongsTo(models.Planet, {
         as: "orbits",
-        foreignKey: 'planet_id',
+        foreignKey: 'planet_name', // // This is the name of the fKey for the model that will be associated (resides in our child (Moon) model)
+        targetKey: 'name', // This sets the 'name' field as the target field for the association in the Planet model (i.e. will be using the name from Planet to populate our fKey (planet_name) in Moon)
         onDelete: 'CASCADE',
         onUpdate: 'CASCADE',
       });
@@ -27,12 +28,12 @@ module.exports = (sequelize, DataTypes) => {
       diameter: DataTypes.STRING,
       distance_planet: DataTypes.STRING,
       history: DataTypes.TEXT,
-      planet_id: {
-        type: DataTypes.INTEGER,
+      planet_name: {
+        type: DataTypes.STRING,
         onDelete: 'CASCADE',
         references: {
           model: 'planets', // FYI, this can be either a string representing the table name ('planets'), OR a sequelize model (Planet).
-          key: 'id',
+          key: 'name',
         },
       },
     },
