@@ -1,0 +1,4 @@
+databases:
+  - name: solarSystemQuack
+    plan: free
+    databaseName: solarSystemQuack_production
