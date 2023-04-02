@@ -17,6 +17,6 @@ services:
           property: connectionString
 
 databases:
-  - name: solarSystemQuack_production
+  - name: solar_system_quack
     plan: free
     databaseName: solar_system_quack
