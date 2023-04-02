@@ -1,3 +1,15 @@
+services:
+  - type: web
+    name: solarSytQuack
+    env: node
+    repo: https://github.com/pfknight8/SolarSysQuack.git
+    region: ohio
+    plan: free
+    branch: main
+    envVars:
+      - key: NODE_ENV
+        value: production
+
 databases:
   - name: solarSystemQuack
     plan: free
