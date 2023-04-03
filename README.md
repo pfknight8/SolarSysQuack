@@ -1,5 +1,6 @@
-# SolarSysQuack
-Quacking Through the Cosmos
+# Quacking Through the Cosmos
+
+### Backend Repository
 
 ---
 ## Team
@@ -40,17 +41,18 @@ To get started with coding this project, one will need to install the proper tec
 
 [Frontend Repo](https://github.com/MichaelKleyman/SolarSysQuack-Frontend)
 
+[Project Deployment](https://solar-system-quack.vercel.app/)
+
 ---
 ## Features
 
-- [ ] Display made entirely out of CSS w/o imported assets
-- [ ] Planets can be selected to display an info 'page'
-- [ ] Planet moons, if applicable, are also displayed with info 'page' of planet
-- [ ] Moons of planets can be selected to display own info 'page' (+MVP)
-- [ ] 
-
----
-## Screenshots
+- [x] Planets are made entirely out of CSS w/o imported assets
+- [x] Planets can be selected to display modal with a brief synopsis of the planet info
+- [x] The modal can be clicked to view more information about each planet on their info 'page'
+- [x] The additional planet info can be shown by clicking the respective links on the nav bar
+- [x] Planet moons, if applicable, are also displayed on info 'page' of planet
+- [x] Moons of planets can be shown when the Moons link on the navbar is clicked
+- [x] Site is deployed, with frontend linking up to backend
 
 ---
 ## Quackathon Prompt
@@ -113,6 +115,7 @@ Credit: DevJessParker 03/24/2023
 Any relevant resources or code snippets can be referenced (linked) to here.
 
 - [Windows To The Universe](https://www.windows2universe.org/our_solar_system/moons_table.html)
+- NASA [Solar System](https://solarsystem.nasa.gov/planets/overview/) Planet Overview
 - [Sequelize](https://sequelize.org/docs/v6/getting-started/) Documents
 - [PostgreSQL](https://www.postgresql.org/docs/) Documents
 - [Express.js](https://expressjs.com/en/starter/installing.html) Documents
