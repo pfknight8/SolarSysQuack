@@ -1,5 +1,4 @@
-# SolarSysQuack
-Quacking Through the Cosmos
+# Quacking Through the Cosmos
 
 ---
 ## Team
@@ -43,11 +42,12 @@ To get started with coding this project, one will need to install the proper tec
 ---
 ## Features
 
-- [ ] Display made entirely out of CSS w/o imported assets
-- [ ] Planets can be selected to display an info 'page'
-- [ ] Planet moons, if applicable, are also displayed with info 'page' of planet
-- [ ] Moons of planets can be selected to display own info 'page' (+MVP)
-- [ ] 
+- [ ] Planets are made entirely out of CSS w/o imported assets
+- [ ] Planets can be selected to display modal with a brief synopsis of the planet info
+- [ ] The modal can be clicked to view more information about each planet on their info 'page'
+- [ ] The additional planet info can be shown by clicking the respective links on the nav bar
+- [ ] Planet moons, if applicable, are also displayed on info 'page' of planet
+- [ ] Moons of planets can be shown when the Moons link on the navbar is clicked
 
 ---
 ## Screenshots
